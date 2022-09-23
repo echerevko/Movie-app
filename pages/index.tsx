@@ -55,14 +55,16 @@ const Home: NextPage = () => {
           ? data.pages.map((page) =>
               page.results.map((movie) => (
                 <Link key={movie.id} href={`/${movie.id}`}>
-                  <Card
-                    imgUrl={
-                      movie.poster_path
-                        ? IMAGE_BASE_URL + POSTER_SIZE + movie.poster_path
-                        : '/no-image.png'
-                    }
-                    title={movie.original_title}
-                  />
+                  <div className='cursor-pointer hover:opacity-75 duration-300'>
+                    <Card
+                      imgUrl={
+                        movie.poster_path
+                          ? IMAGE_BASE_URL + POSTER_SIZE + movie.poster_path
+                          : '/no-image.png'
+                      }
+                      title={movie.original_title}
+                    />
+                  </div>
                 </Link>
               ))
             )
