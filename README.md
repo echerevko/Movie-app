@@ -1,8 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Movies app
+
+Preview: https://movie-app-nmd9.vercel.app/
+
+## Used Technologies
+
+- Next.js
+- React.js
+- React Query
+- Typescript
+- Tailwind
+
+## An external API:Rest was used to obtain data
+
+Read more https://developers.themoviedb.org/3/getting-started/append-to-response
 
 ## Getting Started
 
-First, run the development server:
+- You first need to register on https://developers.themoviedb.org/3/getting-started/append-to-response and get a unique key
+- Next is, in the next-movie-app folder, you need to create .env.local and specify a field with a unique key inside like API_KEY=0898b2
+
+- To run local, run the development server:
 
 ```bash
 npm run dev
@@ -10,25 +27,29 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Client side: styles, UI, UX
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### UI, UX:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- built responsively
 
-## Learn More
+### CSS:
 
-To learn more about Next.js, take a look at the following resources:
+- the app used Tailwind for styling
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Client side: Next.js
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- for the state management of the application and for implementation of the app I used modern React and Next.js, customized hooks for fetching data
+- Getting data for the feed Home Page used client side
 
-## Deploy on Vercel
+## Server side
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Getting data for the Single Page used server side
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Optimization:
+
+### Unit tests
+
+- It is good practice to write unit tests
