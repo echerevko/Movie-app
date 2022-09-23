@@ -33,7 +33,7 @@ const MovieInfo = ({
   revenue
 }: Props) => (
   <div className='relative w-full h-auto p-4'>
-    <div className='relative h-full min-h-128 flex flex-col md:flex-row max-w-7xl p-4 m-auto z-10 rounded-xl bg-zinc-300 bg-opacity-80'>
+    <div className='relative h-full min-h-128 flex flex-col md:flex-row max-w-7xl p-4 m-auto z-10 rounded-xl bg-zinc-400 bg-opacity-80'>
       <div className='relative w-full h-96 md:h-auto md:w-1/3'>
         <Thumb imgUrl={thumbUrl} />
         <div className='absolute top-4 left-4 rounded-full bg-white w-10 h-10 flex justify-center items-center text-black text-sm font-bold'>
