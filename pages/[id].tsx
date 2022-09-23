@@ -23,7 +23,7 @@ type Props = {
   cast: Cast[];
 };
 
-const Page: NextPage<Props> = ({ movie, cast, directors }) => (
+const MoviePage: NextPage<Props> = ({ movie, cast, directors }) => (
   <main>
     <Header />
     <BreadcrumbNav title={movie.original_title} />
@@ -55,7 +55,7 @@ const Page: NextPage<Props> = ({ movie, cast, directors }) => (
   </main>
 );
 
-export default Page;
+export default MoviePage;
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const id = context.params?.id as string;
