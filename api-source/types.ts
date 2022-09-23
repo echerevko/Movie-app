@@ -20,3 +20,22 @@ export type Movie = {
   revenue: number;
   release_date: string;
 };
+
+export type Cast = {
+  character: string;
+  name: string;
+  credit_id: string;
+  profile_path: string;
+};
+
+export type Crew = {
+  job: string;
+  name: string;
+  credit_id: number;
+};
+
+export type Credits = {
+  id: number;
+  cast: Cast[];
+  crew: Crew[];
+};
