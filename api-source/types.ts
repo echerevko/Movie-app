@@ -1,10 +1,3 @@
-export type Movies = {
-  page: number;
-  results: Movie[];
-  total_pages: number;
-  total_results: number;
-};
-
 export type Movie = {
   backdrop_path: string;
   id: number;
@@ -21,10 +14,17 @@ export type Movie = {
   release_date: string;
 };
 
+export type Movies = {
+  page: number;
+  results: Movie[];
+  total_pages: number;
+  total_results: number;
+};
+
 export type Cast = {
   character: string;
-  name: string;
   credit_id: string;
+  name: string;
   profile_path: string;
 };
 

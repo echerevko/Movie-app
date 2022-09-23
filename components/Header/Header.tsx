@@ -13,10 +13,20 @@ const Header = ({ setQuery }: Props) => (
       <Link href='/'>
         <div className='flex items-center cursor-pointer'>
           <div className='invisible md:visible'>
-            <Image width='150' height='50' src='/logo.svg' alt='logo' />
+            <Image
+              width='150'
+              height='50'
+              src='/rmdb-logo.svg'
+              alt='rmdb-logo'
+            />
           </div>
           <div className='absolute md:invisible pt-2'>
-            <Image height='100' width='100' src='/logo.svg' alt='logo' />
+            <Image
+              height='42'
+              width='42'
+              src='/rmdb-logo-small.svg'
+              alt='rmdb-logo-small'
+            />
           </div>
         </div>
       </Link>

@@ -1,7 +1,7 @@
 import { useInfiniteQuery } from '@tanstack/react-query';
-//Fetch function
+// Fetch function
 import { fetchMovies } from './fetchFunctions';
-//Types
+// Types
 import { Movies } from './types';
 
 export const useFetchMovies = (search: string) => {
@@ -13,6 +13,7 @@ export const useFetchMovies = (search: string) => {
         if (lastPage.page < lastPage.total_pages) {
           return lastPage.page + 1;
         }
+
         return undefined;
       },
       refetchOnWindowFocus: false

@@ -16,7 +16,7 @@ const Home: NextPage = () => {
   const [query, setQuery] = React.useState('');
   const { data, fetchNextPage, isLoading, isFetching, error } =
     useFetchMovies(query);
-  console.log(data);
+  // console.log(data);
 
   const handleScroll = (event: React.UIEvent<HTMLElement>) => {
     const { scrollTop, clientHeight, scrollHeight } = event.currentTarget;
