@@ -12,3 +12,16 @@ import Header from '../components/Header/Header';
 import BreadcrumbNav from '../components/BreadcrumbNav/BreadcrumbNav';
 import Grid from '../components/Grid/Grid';
 import Card from '../components/Card/Card';
+import MovieInfo from '../components/MovieInfo/MovieInfo';
+
+const Movie: NextPage = () => (
+  <main>
+    <Header />
+    <MovieInfo />
+    <Grid>
+      <Card />
+    </Grid>
+  </main>
+);
+
+export default Movie;
